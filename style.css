@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f2f2f2;
+  color: #312c2c;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+form {
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.2s;
+}
+nav{
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+}
+
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+ nav a:hover{
+  color: #ff6600;
+ }
+section {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+#about {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin: 30px auto;
+  max-width: 800px;
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 32px;
+  color: #ff6600;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card p {
+  margin: 10px 0;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #ddd;
+}
+
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 4px solid #333;
+}
+.project-card {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 0.8s ease forwards;
+  animation-delay: 1s;
+}
+.project-card {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 0.8s ease forwards;
+  animation-delay: 1s;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+h1 {
+  opacity: 0;
+  animation: slideDown 1s ease-out forwards;
+}
+footer {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+/* Reset and Base Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+header, section, footer {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Header Styling + Animation */
+header {
+  background: #333;
+  color: #fff;
+  animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Navbar links */
+nav a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/* About Section Animation */
+#about {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Project Cards + Zoom Animation */
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-left: 4px solid #333;
+  max-width: 700px;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 0.8s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contact Form Slide from Right */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Footer Animation */
+footer {
+  background: #333;
+  color: #fff;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social Icons Styling */
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  background-image: url('https://images.pexels.com/photos/5716004/pexels-photo-5716004.jpeg');
+  
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+/* Overlay Effect */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0;
+  color: #ff6600;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #ffcc66;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Project Cards */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #000;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Buttons & Social Links */
+.resume-btn, .social-icons a {
+  display: inline-block;
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 25px;
+  margin: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.
+ background-image: url('https://images.pexels.com/photos/4099099/pexels-photo-4099099.jpeg');
+
